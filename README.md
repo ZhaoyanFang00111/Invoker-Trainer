@@ -1,2 +1,3 @@
 # Invoker-Trainer
-html invoker trainer
+Basic html invoker trainer
+There is also a MacOS apple silicon version made with PakePlus
