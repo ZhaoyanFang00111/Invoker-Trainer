@@ -1,0 +1,151 @@
+#myModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 0 10px #00000066;
+  z-index: 1000;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+button.info {
+    width: 60px;
+            font: icon;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: #18a0da;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial;
+}
+
+.game-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.orb-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.orb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+
+.spell-target {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.spell-target img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.orb-buttons {
+position: absolute;
+bottom: 40px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 20px;
+}
+
+.orb-btn {
+position: relative;
+width: 60px;
+height: 60px;
+padding: 0;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+
+.orb-img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+display: block;
+}
+
+.orb-btn:active,
+.orb-btn.active {
+  transform: scale(0.9);
+}
+
+.q { background-color: #88c0d0; } 
+.w { background-color: #a3be8c; } 
+.e { background-color: #bf616a; } 
+.spell-orb {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spell-orb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.orb-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+.label {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
